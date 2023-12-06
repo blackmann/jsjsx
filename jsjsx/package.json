@@ -1,0 +1,27 @@
+{
+  "name": "jsjsx",
+  "version": "1.0.0",
+  "main": "index.mjs",
+  "license": "MIT",
+  "files": [
+    "index.mjs",
+    "fns.mjs",
+    "types.d.ts",
+    "index.d.ts",
+    "elements.mjs"
+  ],
+  "exports": {
+    ".": "./index.mjs",
+    "./fns": "./fns.mjs",
+    "./types.d.ts": "./types.d.ts",
+    "./index.d.ts": "./index.d.ts",
+    "./elements.mjs": "./elements.mjs"
+  },
+  "scripts": {
+    "build": "yarn generate",
+    "generate": "node generate-types.mjs > types.d.ts && node generate-fns.mjs > fns.mjs"
+  },
+  "devDependencies": {
+    "vite": "^5.0.5"
+  }
+}

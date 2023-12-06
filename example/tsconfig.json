@@ -18,7 +18,8 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "types": ["jsjsx/index.d.ts"],
   },
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]
